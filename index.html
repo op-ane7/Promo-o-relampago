@@ -4,39 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promoções Incríveis</title>
-    <style>
-        /* Estilos CSS para o site */
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        section {
-            padding: 20px;
-        }
-        .produto {
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-        .produto img {
-            max-width: 100%;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -45,26 +13,33 @@
         <p>Encontre os melhores descontos e ofertas!</p>
     </header>
 
-    <section>
-        <h2>Destaques</h2>
-
-        <div class="produto">
-            <img src="imagem1.jpg" alt="Produto 1">
-            <h3>Produto 1</h3>
-            <p>Descrição do produto 1.</p>
-            <p>Preço: R$ 99,99</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="produto">
-            <img src="imagem2.jpg" alt="Produto 2">
-            <h3>Produto 2</h3>
-            <p>Descrição do produto 2.</p>
-            <p>Preço: R$ 199,99</p>
-            <button>Comprar</button>
-        </div>
-
+    <main>
+        <section id="destaques">
+            <h2>Destaques</h2>
+            <div class="produto">
+                <img src="imagem1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Descrição do produto 1.</p>
+                <p>Preço: R$ 99,99</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="imagem2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>Descrição do produto 2.</p>
+                <p>Preço: R$ 199,99</p>
+                <button>Comprar</button>
+            </div>
         </section>
+        <section id="categorias">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#">Eletrônicos</a></li>
+                <li><a href="#">Vestuário</a></li>
+                <li><a href="#">Livros</a></li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2023 Promoções Incríveis</p>
